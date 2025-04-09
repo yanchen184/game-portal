@@ -1,0 +1,9 @@
+遊戲圖片資源將會在此處存放。
+
+預期圖片文件名稱:
+- reversi.jpg
+- ball-sort.jpg
+- auto-chess.jpg
+- poker.jpg
+
+您可以添加實際的遊戲圖片到此目錄中。
