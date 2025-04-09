@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -12,7 +12,7 @@ import NotFoundPage from './pages/NotFoundPage';
  */
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div className="flex flex-col min-h-screen">
         <Header version="1.0.0" />
         <main className="flex-grow container mx-auto px-4 py-8">
