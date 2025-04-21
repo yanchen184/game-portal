@@ -20,7 +20,7 @@ const Header = ({ version }) => {
           </div>
           <div>
             <h1 className="text-xl font-bold text-white">遊戲入口網站</h1>
-            <span className="text-xs text-gray-400">v{version}</span>
+            <span className="text-sm bg-indigo-700 text-white px-2 py-0.5 rounded-md">v{version}</span>
           </div>
         </Link>
         <nav>
@@ -30,7 +30,7 @@ const Header = ({ version }) => {
             </li>
             <li>
               <a 
-                href="https://github.com/yanchen184" 
+                href="https://github.com/yanchen184/game-portal" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition-colors"
