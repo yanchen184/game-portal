@@ -19,7 +19,7 @@
 ## 技術棧
 
 - React
-- React Router
+- React Router (HashRouter)
 - Tailwind CSS
 - Framer Motion
 
@@ -27,6 +27,38 @@
 
 訪問 [https://yanchen184.github.io/game-portal](https://yanchen184.github.io/game-portal) 查看在線演示。
 
+## 開發指南
+
+1. 克隆此存儲庫
+   ```
+   git clone https://github.com/yanchen184/game-portal.git
+   cd game-portal
+   ```
+
+2. 安裝依賴
+   ```
+   npm install
+   ```
+
+3. 啟動開發伺服器
+   ```
+   npm start
+   ```
+
+4. 構建生產版本
+   ```
+   npm run build
+   ```
+
+5. 部署到 GitHub Pages
+   ```
+   npm run deploy
+   ```
+
 ## 版本
 
-當前版本: v1.0.0
+當前版本: v1.0.1
+
+## 授權
+
+MIT License
