@@ -11,10 +11,13 @@ import NotFoundPage from './pages/NotFoundPage';
  * @returns {JSX.Element} The rendered App component
  */
 function App() {
+  // Use version from package.json to display in the header
+  const appVersion = '1.0.1';
+  
   return (
-    <Router>
+    <Router basename="/">
       <div className="flex flex-col min-h-screen">
-        <Header version="1.0.0" />
+        <Header version={appVersion} />
         <main className="flex-grow container mx-auto px-4 py-8">
           <Routes>
             <Route path="/" element={<HomePage />} />
