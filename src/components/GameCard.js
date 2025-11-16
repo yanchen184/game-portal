@@ -19,7 +19,18 @@ const GameCard = ({ game }) => {
     return badges[category] || { text: '其他', color: 'bg-gray-500' };
   };
 
+  // Get action button text based on category
+  const getActionButtonText = (category) => {
+    const buttons = {
+      games: '🎮 開始遊戲',
+      applications: '💼 打開應用',
+      portfolio: '📸 查看作品',
+    };
+    return buttons[category] || '🚀 查看專案';
+  };
+
   const categoryBadge = getCategoryBadge(game.category);
+  const actionButtonText = getActionButtonText(game.category);
 
   return (
     <motion.div
@@ -79,20 +90,20 @@ const GameCard = ({ game }) => {
 
         {/* Buttons */}
         <div className="flex gap-3 mt-4">
-          <Link
-            to={`/game/${game.id}`}
-            className="flex-1 text-center px-4 py-2.5 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors font-medium shadow-md hover:shadow-lg"
-          >
-            詳情
-          </Link>
           <a
             href={game.demoUrl}
             target="_blank"
             rel="noopener noreferrer"
+            className="flex-1 text-center px-4 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all font-medium shadow-md hover:shadow-xl transform hover:scale-105"
+          >
+            {actionButtonText}
+          </a>
+          <Link
+            to={`/game/${game.id}`}
             className="flex-1 text-center px-4 py-2.5 bg-slate-600 text-white rounded-lg hover:bg-slate-500 transition-colors font-medium shadow-md hover:shadow-lg"
           >
-            查看專案
-          </a>
+            📋 詳情
+          </Link>
         </div>
 
         {/* GitHub Link */}

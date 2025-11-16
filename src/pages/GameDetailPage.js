@@ -36,6 +36,18 @@ const GameDetailPage = () => {
 
   const categoryInfo = getCategoryInfo(project.category);
 
+  // Get action button text based on category
+  const getActionButtonText = (category) => {
+    const buttons = {
+      games: '🎮 開始遊戲',
+      applications: '💼 打開應用',
+      portfolio: '📸 查看作品',
+    };
+    return buttons[category] || '🚀 查看專案';
+  };
+
+  const actionButtonText = getActionButtonText(project.category);
+
   return (
     <div>
       <div className="mb-8">
@@ -144,11 +156,11 @@ const GameDetailPage = () => {
                 href={project.demoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-center px-6 py-4 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-all font-medium shadow-lg hover:shadow-xl text-lg"
+                className="inline-block text-center px-6 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl hover:from-indigo-700 hover:to-purple-700 transition-all font-bold shadow-lg hover:shadow-2xl text-lg"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                🚀 查看專案
+                {actionButtonText}
               </motion.a>
 
               <motion.a
