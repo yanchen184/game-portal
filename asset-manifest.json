@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/game-portal/static/css/main.c64498f4.css",
-    "main.js": "/game-portal/static/js/main.fe3727ac.js",
-    "static/js/453.63e38e23.chunk.js": "/game-portal/static/js/453.63e38e23.chunk.js",
+    "main.css": "/game-portal/static/css/main.f13116e8.css",
+    "main.js": "/game-portal/static/js/main.acde68e2.js",
+    "static/js/453.327bbb69.chunk.js": "/game-portal/static/js/453.327bbb69.chunk.js",
     "index.html": "/game-portal/index.html",
-    "main.c64498f4.css.map": "/game-portal/static/css/main.c64498f4.css.map",
-    "main.fe3727ac.js.map": "/game-portal/static/js/main.fe3727ac.js.map",
-    "453.63e38e23.chunk.js.map": "/game-portal/static/js/453.63e38e23.chunk.js.map"
+    "main.f13116e8.css.map": "/game-portal/static/css/main.f13116e8.css.map",
+    "main.acde68e2.js.map": "/game-portal/static/js/main.acde68e2.js.map",
+    "453.327bbb69.chunk.js.map": "/game-portal/static/js/453.327bbb69.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c64498f4.css",
-    "static/js/main.fe3727ac.js"
+    "static/css/main.f13116e8.css",
+    "static/js/main.acde68e2.js"
   ]
 }
